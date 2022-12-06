@@ -1,0 +1,136 @@
+.about {
+  height: auto;
+  width: 100%;
+  background-color: var(--bgWhiteColor);
+  display: flex;
+  padding: 7rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.about_bio {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 6rem;
+  margin-left: 10rem;
+  margin-bottom: 7rem;
+}
+.about_whatidos,
+.about_awards,
+.about_testimonials {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 8rem;
+}
+.whatidos {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6rem;
+}
+.awards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.testimonials {
+  width: 70rem;
+  display: flex;
+  margin: 0 auto;
+  border-radius: 0.6rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+}
+
+/* max screen screen 1200px */
+
+@media only screen and (max-width: 1200px) {
+  .about_bio {
+    width: 100%;
+    margin-left: 18rem;
+    margin-bottom: 7rem;
+  }
+  .about_whatidos,
+  .about_awards,
+  .about_testimonials {
+    width: 90%;
+    margin-left: 18rem;
+  }
+  .whatidos {
+    gap: 2rem;
+    width: 90%;
+  }
+  .awards {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+  }
+}
+
+/* max screen screen 991px */
+
+@media only screen and (max-width: 991px) {
+  .about_bio {
+    flex-direction: column;
+  }
+  .about_bio > div:first-of-type {
+    margin-left: -10rem;
+  }
+  .about_testimonials {
+    margin-left: 18rem;
+    padding-right: 10rem;
+  }
+  .testimonials {
+    width: 100%;
+  }
+}
+
+/* max screen screen 767px */
+
+@media only screen and (max-width: 767px) {
+  .about {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about_bio {
+    width: 100%;
+    padding-right: 4rem;
+    margin-left: 4rem;
+    margin-bottom: 0rem;
+    gap: 4rem;
+  }
+  .about_whatidos,
+  .about_awards,
+  .about_testimonials {
+    width: 100%;
+    margin-left: 4rem;
+  }
+  .whatidos {
+    width: 100%;
+    padding-right: 4rem;
+  }
+  .awards {
+    width: 100%;
+    padding-right: 4rem;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .about_testimonials {
+    padding-right: 4rem;
+  }
+  .testimonials {
+    width: 100%;
+  }
+}
+
+/* max screen screen 576px */

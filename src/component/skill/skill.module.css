@@ -1,0 +1,29 @@
+.skill {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2.6rem;
+}
+.skill h2 {
+  width: 12rem;
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--deepBlackColor);
+  opacity: 0.8;
+}
+.progress_bar {
+  position: relative;
+  width: 100%;
+  height: 1.6rem;
+  background-color: rgba(193, 197, 197, 0.705);
+  margin-top: 0.3rem;
+  border-radius: 0.6rem;
+  overflow: hidden;
+}
+
+.progress_text {
+  font-size: 1.4rem;
+  color: var(--bgWhiteColor);
+  font-weight: 500;
+  padding: 1rem;
+  overflow: hidden;
+}

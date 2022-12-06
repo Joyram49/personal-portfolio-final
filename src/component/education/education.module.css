@@ -1,0 +1,15 @@
+.education {
+  margin-bottom: 3rem;
+}
+.education p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: var(--basefont);
+  opacity: 0.9;
+  color: var(--pfontColor);
+}
+.education h2 {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}

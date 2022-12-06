@@ -1,0 +1,39 @@
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.details > h2 {
+  font-size: 3.8rem;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.1rem;
+  line-height: 4.4rem;
+}
+.details > p {
+  font-size: 1.6rem;
+  font-family: "Rubik", monospace;
+  color: #555;
+  font-weight: 400;
+}
+.details_address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.4rem;
+}
+.details_address div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+  font-size: 1.8rem;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+}
+.details_address div > svg {
+  color: #ff9301;
+  font-weight: 700;
+  font-size: 2.6rem;
+}

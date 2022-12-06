@@ -1,0 +1,13 @@
+.pill {
+  background-color: var(--bgWhiteColor);
+  color: var(--yellowColor);
+  padding: 0.6rem 1rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 0.1rem solid var(--yellowColor);
+  transition: all 0.3s ease;
+}
+.pill:hover {
+  background-color: var(--yellowColor);
+  color: #fff;
+}

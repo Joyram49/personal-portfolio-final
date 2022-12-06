@@ -1,0 +1,91 @@
+.whatido {
+  width: 28rem;
+  height: 35rem;
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 0.6rem;
+  box-sizing: 0 0 2rem rgba(0, 0, 0, 0.4);
+  position: relative;
+  z-index: 1;
+  display: block;
+  overflow: hidden;
+}
+.whatido::before {
+  position: absolute;
+  content: "";
+  width: 0rem;
+  height: 0rem;
+  border-radius: 50%;
+  background-color: var(--deepBlackColor);
+  top: -8rem;
+  left: -6rem;
+  z-index: -1;
+  transition: all 0.8s ease;
+}
+.whatido:hover::before {
+  height: 20rem;
+  width: 20rem;
+}
+.whatido::after {
+  position: absolute;
+  content: "";
+  width: 35rem;
+  height: 35rem;
+  background-color: var(--yellowColor);
+  top: -20rem;
+  left: -15rem;
+  border-radius: 0.6rem;
+  z-index: -2;
+  transition: all 0.8s ease;
+  border-radius: 50%;
+}
+.whatido:hover::after {
+  top: 0;
+  left: 0;
+  border-radius: 0.6rem;
+}
+.whatido img {
+  width: 6rem;
+  height: 6rem;
+  object-fit: cover;
+  margin-bottom: 7rem;
+}
+.whatido h2 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: var(--deepBlackColor);
+  margin-bottom: 1rem;
+  font-family: var(--basefont);
+  transition: color 0.3s ease;
+}
+.whatido:hover h2 {
+  color: var(--bgWhiteColor);
+}
+.whatido p {
+  font-family: var(--logofont);
+  font-size: 1.5rem;
+  font-weight: 500;
+  opacity: 0.8;
+  color: var(--pfontColor);
+  text-align: justify;
+  transition: color 0.3s ease;
+}
+.whatido:hover p {
+  color: var(--bgWhiteColor);
+  opacity: 1;
+}
+
+/* max screen screen 767px */
+
+@media only screen and (max-width: 767px) {
+  .whatido {
+    width: 100%;
+    height: auto;
+  }
+  .whatido:hover::after {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+}

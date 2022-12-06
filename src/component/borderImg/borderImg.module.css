@@ -1,0 +1,29 @@
+.border_image {
+  width: 60%;
+  height: auto;
+  padding-top: 8rem;
+  background-image: url("../../assets/border-dark.png");
+  background-size: auto 0.6rem;
+  background-position: 50%;
+  background-repeat: repeat-x;
+  overflow: hidden;
+}
+
+/* max screen screen 1200px */
+
+@media only screen and (max-width: 1200px) {
+  .border_image {
+    width: 80%;
+    margin-left: 10rem;
+  }
+}
+
+/* max screen screen 768px */
+
+@media only screen and (max-width: 768px) {
+  .border_image {
+    width: 100%;
+    margin: 0 2rem;
+    overflow: hidden;
+  }
+}

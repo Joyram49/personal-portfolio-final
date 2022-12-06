@@ -1,0 +1,130 @@
+.navbar {
+  width: 8rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-right: 0.1rem solid var(--navBorderColor);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease-in;
+  z-index: 100;
+}
+.navbar__brand {
+  width: 100%;
+  height: 8rem;
+  background-color: var(--yellowColor);
+  cursor: pointer;
+}
+.navbar__brand a {
+  font-family: var(--basefont);
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 700;
+}
+.nav__links {
+  flex: 1;
+  margin-top: 4rem;
+}
+.nav__link {
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  border-bottom: 0.1rem solid var(--navBorderColor);
+  border-left: 0.2rem solid transparent;
+}
+.nav__links > .nav__link:last-child {
+  border-bottom: none;
+}
+
+.nav__link svg {
+  color: var(--deepBlackColor);
+  font-size: 2.7rem;
+  transition: all 0.3s ease;
+}
+.nav__link span {
+  font-size: 1.6rem;
+  color: var(--semiBlackColor);
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+}
+
+.mobile__nav {
+  display: block;
+  position: fixed;
+  bottom: 1rem;
+  right: -4.7rem;
+  z-index: 100;
+  transition: all 0.3s ease-in;
+}
+
+.toggle__menu {
+  width: 4.7rem;
+  height: 4.7rem;
+  backdrop-filter: blur(2px);
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease-in;
+}
+.toggle__hover {
+  background-color: var(--yellowColor);
+}
+
+.toggle__menu div span {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 2.5rem;
+  height: 0.2rem;
+  background-color: var(--bgWhiteColor);
+  color: var(--bgWhiteColor);
+  border-radius: 50%;
+  transition: all 0.3s ease-in;
+}
+.toggle__menu div span:nth-child(1) {
+  top: 1.7rem;
+}
+.toggle__menu div span:nth-child(3) {
+  bottom: 1.4rem;
+}
+.toggle__menu .active span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 2.3rem;
+  left: 1.2rem;
+}
+.toggle__menu .active span:nth-child(2) {
+  width: 0;
+}
+.toggle__menu .active span:nth-child(3) {
+  transform: rotate(-45deg);
+  bottom: 2.2rem;
+  left: 1.3rem;
+}
+
+@media screen and (max-width: 767px) {
+  .mobile__nav {
+    right: 1rem;
+  }
+  .navbar {
+    left: -8rem;
+  }
+  .show__nav {
+    left: 0;
+  }
+}
+
+.activeNav {
+  border-left: 0.2rem solid var(--yellowColor);
+}
+.activeNav svg {
+  color: var(--yellowColor);
+}
+.activeNav span {
+  color: var(--yellowColor);
+}

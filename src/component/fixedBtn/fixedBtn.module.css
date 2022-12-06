@@ -1,0 +1,27 @@
+.home_fixed_btn {
+  position: fixed;
+  top: 92%;
+  right: 1%;
+  background-color: var(--bgWhiteColor);
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.home_fixed_btn svg {
+  font-size: 2.5rem;
+  color: var(--yellowColor);
+  font-weight: 800;
+}
+
+/* max screen 768px */
+
+@media only screen and (max-width: 768px) {
+  .home_fixed_btn {
+    display: none;
+  }
+}

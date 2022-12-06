@@ -1,0 +1,47 @@
+.about_bio {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.about_bio p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--pfontColor);
+  text-align: justify;
+  line-height: 2.4rem;
+}
+.about_bio > p {
+  margin-top: 2rem;
+}
+.about_bio_person {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+.about_bio_person_left,
+.about_bio_person_right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.about_bio_person_left span,
+.about_bio_person_right span {
+  font-weight: 700;
+  margin-right: 0.6rem;
+}
+
+/* max screen screen 992px */
+
+@media only screen and (max-width: 768px) {
+  .about_bio {
+    width: 100%;
+  }
+}
+/* max screen screen 576px */
+
+@media only screen and (max-width: 576px) {
+  .about_bio_person {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

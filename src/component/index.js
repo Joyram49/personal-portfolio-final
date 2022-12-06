@@ -1,0 +1,17 @@
+export { default as Navbar } from "./navbar/Navbar";
+export { default as FixedBtn } from "./fixedBtn/FixedBtn";
+export { default as AboutImg } from "./aboutImg/AboutImg";
+export { default as AboutBio } from "./aboutBio/AboutBio";
+export { default as Heading } from "./heading/Heading";
+export { default as WhatIDo } from "./whatIDo/WhatIDo";
+export { default as BorderImg } from "./borderImg/BorderImg";
+export { default as Award } from "./award/Award";
+export { default as Testimonial } from "./testimonial/Testimonial";
+export { default as Experience } from "./experience/Experience";
+export { default as Pill } from "./pill/Pill";
+export { default as Education } from "./education/Education";
+export { default as Skill } from "./skill/Skill";
+export { default as WorkModal } from "./workModal/WorkModal";
+export { default as Article } from "./Article/Article";
+export { default as ContactForm } from "./contactForm/ContactForm";
+export { default as ContactDetails } from "./contactDetails/ContactDetails";

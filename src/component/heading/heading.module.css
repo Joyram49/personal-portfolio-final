@@ -1,0 +1,24 @@
+.heading {
+  position: relative;
+  width: 100%;
+  margin: 2rem 0;
+}
+.heading h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  font-family: var(--basefont);
+  color: var(--deepBlackColor);
+  text-shadow: 0 0 0.3rem rgba(255, 204, 211, 0.4);
+  z-index: 1;
+  position: relative;
+}
+.heading_circle {
+  position: absolute;
+  top: 0;
+  left: -1.4rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  background-color: var(--yellowColor);
+  opacity: 0.6;
+}
